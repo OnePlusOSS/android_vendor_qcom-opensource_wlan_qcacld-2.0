@@ -107,7 +107,7 @@ $(shell mkdir -p $(TARGET_OUT)/lib/modules; \
            $(TARGET_OUT)/lib/modules/wlan.ko)
 endif # PRODUCT_VENDOR_MOVE_ENABLED
 endif
-$(shell ln -sf /persist/wlan_mac.bin $(TARGET_OUT_ETC)/firmware/wlan/qca_cld/wlan_mac.bin)
+$(shell ln -sf /persist/wlan_mac.bin $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/wlan_mac.bin)
 
 ifeq ($(call is-board-platform-in-list, msm8960),true)
 $(shell ln -sf /firmware/image/bdwlan20.bin $(TARGET_OUT_ETC)/firmware/fakeboar.bin)
